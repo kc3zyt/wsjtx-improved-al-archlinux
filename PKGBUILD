@@ -2,10 +2,9 @@
 
 pkgname=wsjtx-improved-al
 _pkgname=wsjtx
-pkgver=2.7.1
-_pkgver="-devel"
-_build=250106-RC8
-pkgrel=37
+pkgver=2.8.0
+_build=250314
+pkgrel=1
 pkgdesc="Software for Amateur Radio Weak-Signal Communication (JT9 and JT65) - WSJT-X Improved by DG2YCB (Alternative Layout Version)"
 arch=('i686' 'x86_64' 'aarch64')
 url="https://sourceforge.net/projects/wsjt-x-improved/"
@@ -36,14 +35,14 @@ install=wsjtx-improved.install
 
 provides=('wsjtx')
 conflicts=('wsjtx')
-source=("https://downloads.sourceforge.net/project/wsjt-x-improved/WSJT-X_v$pkgver/Source%20code/$_pkgname-${pkgver}${_pkgver}_improved_AL_PLUS_${_build}.tgz")
-md5sums=('77ee46ec7e25725b3727f1d0e6612936')
-sha1sums=('a151eb82889e50d1156d90b9d53d7948f5202fb8')
+source=("https://downloads.sourceforge.net/project/wsjt-x-improved/WSJT-X_v$pkgver/Source%20code/$_pkgname-${pkgver}_improved_AL_PLUS_${_build}.tgz")
+md5sums=('ab34608cb900726f78a7e4ae8ff163e5')
+sha1sums=('9342e90f47a0d077521e89efbd59bccd6abbd2bf')
 
 options=(!lto)
 
 prepare() {
-    tar xzf ${_pkgname}-${pkgver}${_pkgver}_improved_AL_PLUS_${_build}.tgz
+    tar xzf ${_pkgname}-${pkgver}_improved_AL_PLUS_${_build}.tgz
     mkdir -p "$srcdir"/$_pkgname-$pkgver/wsjtx-prefix/build
     cd "$srcdir"/$_pkgname-$pkgver/wsjtx-prefix
     tar xzf "$srcdir"/$_pkgname-$pkgver/src/wsjtx.tgz
