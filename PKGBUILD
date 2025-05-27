@@ -19,6 +19,7 @@ depends=(
 	'qt5-multimedia'
 	'qt5-serialport'
 	'qt5-tools'
+    'qt5-websockets'
     'readline'
 )
 
