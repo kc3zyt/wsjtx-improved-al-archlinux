@@ -3,8 +3,8 @@
 pkgname=wsjtx-improved-al
 _pkgname=wsjtx
 pkgver=3.1.0
-_build=260303
-pkgrel=260303
+_build=260228
+pkgrel=260228
 pkgdesc="Software for Amateur Radio Weak-Signal Communication (JT9 and JT65) - WSJT-X Improved by DG2YCB (Alternative Layout Version)"
 arch=('i686' 'x86_64' 'aarch64')
 url="https://sourceforge.net/projects/wsjt-x-improved/"
