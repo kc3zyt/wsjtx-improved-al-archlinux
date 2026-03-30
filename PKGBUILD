@@ -28,6 +28,7 @@ makedepends=(
 	'asciidoc'
 	'asciidoctor'
 	'boost'
+	'boost-libs'
 	'gcc-fortran'
 	'texinfo'
 )
