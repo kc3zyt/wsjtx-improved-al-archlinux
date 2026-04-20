@@ -48,6 +48,7 @@ prepare() {
     mkdir -p "$srcdir"/$_pkgname-$pkgver/wsjtx-prefix/build
     cd "$srcdir"/$_pkgname-$pkgver/wsjtx-prefix
     tar xzf "$srcdir"/$_pkgname-$pkgver/src/wsjtx.tgz
+	sed -i 's|fprintf(stderr, usage);|fprintf(stderr, "%s", usage);|' "$srcdir"/$_pkgname-$pkgver/src/wsjtx-3.1.0/wsjtx-prefix/wsjtx/map65/libm65/tmoonsub.c
 }
 
 build() {
